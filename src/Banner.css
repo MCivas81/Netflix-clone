@@ -1,13 +1,13 @@
 .banner {
   color: white;
   object-fit: contain;
-  height: 448px;
+  height: 508px;
 }
 
 .banner__contents {
   margin-left: 30px;
   padding-top: 140px;
-  height: 190px;
+  height: 250px;
 }
 
 .banner__title {
