@@ -1,31 +1,31 @@
-import { useEffect, useState } from "react";
-import "./Nav.css";
+import { useEffect, useState } from 'react';
+import './Nav.css';
 
 function Nav() {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         handleShow(true);
       } else handleShow(false);
     });
     return () => {
-      window.addEventListener("scroll");
+      window.addEventListener('scroll');
     };
   }, []);
 
   return (
-    <div className={`nav ${show && "nav__black"}`}>
+    <div className={`nav ${show && 'nav__black'}`}>
       <img
-        className="nav__logo"
-        src="https://1000marche.net/wp-content/uploads/2020/03/Netflix-logo.png"
-        alt="Netflix Logo"
+        className='nav__logo'
+        src='https://upload.wikimedia.org/wikipedia/commons/7/7b/Eo_circle_red_white_film-camera.svg'
+        alt='Movie Logo'
       />
       <img
-        className="nav__avatar"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-        alt="Netflix Avatar"
+        className='nav__avatar'
+        src='https://lh3.googleusercontent.com/proxy/HzAka9IQokdwXNU-oYZhgzzAZ4l41FR25__YAu5yd0nuHL0P_cQH1my3h9MdEmE59Tm3Cg1qvjtFGTGT2Jgwg_WxoYIswGHxGgjayJPbpO6rwx1Uyk_ebXwDKu_Sai0Guw'
+        alt='Movie Avatar'
       />
     </div>
   );
